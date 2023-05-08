@@ -13,3 +13,7 @@
     font-size: 2rem;
     text-align: center;
 }
+
+.keyboard_container {
+    align-self: stretch;
+}

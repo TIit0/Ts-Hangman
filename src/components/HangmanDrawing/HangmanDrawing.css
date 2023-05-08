@@ -45,6 +45,28 @@
     transform-origin: top right;
 }
 
+.rightLeg {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 210px;
+    right: -90px;
+    transform: rotate(60deg);
+    transform-origin: left bottom;
+}
+
+.leftLeg {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 210px;
+    right: 10px;
+    transform: rotate(-60deg);
+    transform-origin: right top;
+}
+
 .drawing_rope-pole {
     height: 50px;
     width: 10px;

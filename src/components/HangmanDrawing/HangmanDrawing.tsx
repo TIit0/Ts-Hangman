@@ -4,6 +4,8 @@ const Head = <div className="head" />
 const Torso = <div className="torso" />
 const RightArm = <div className="rightArm" />
 const LeftArm = <div className="leftArm" />
+const RightLeg = <div className="rightLeg" />
+const LeftLeg = <div className="leftLeg" />
 
 export default function HangmanDrawing() {
 
@@ -13,6 +15,8 @@ export default function HangmanDrawing() {
             {Torso}
             {RightArm}
             {LeftArm}
+            {RightLeg}
+            {LeftLeg}
             <div className="drawing_rope-pole" />
             <div className="drawing_upper-pole" />
             <div className="drawing_center-pole" />

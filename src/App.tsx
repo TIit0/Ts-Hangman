@@ -1,6 +1,8 @@
 import { useState } from "react"; 
 import wordList from "./wordList.json";
 import HangmanDrawing from "./components/HangmanDrawing/HangmanDrawing";
+import HangmanWord from "./components/HangmanWord/HangmanWord";
+import Keyboard from "./components/Keyboard/Keyboard";
 import "../css/App.css"
 
 function App() {
@@ -18,7 +20,10 @@ function App() {
     <div className="app_wrapper">
       <div className="app_wrapper__win-lose"> Lose Win </div>
       <HangmanDrawing />
-      
+      <HangmanWord />
+      <div className="keyboard_container">
+      <Keyboard />
+      </div>
     </div>
   )
 }

@@ -40,7 +40,7 @@
     background-color: black;
     position: absolute;
     top: 150px;
-    right: 0px;
+    right: 5px;
     transform: rotate(35deg);
     transform-origin: top right;
 }

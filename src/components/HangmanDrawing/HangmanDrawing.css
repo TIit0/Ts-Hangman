@@ -1,0 +1,76 @@
+
+.drawing_wrapper {
+    position: relative;
+}
+
+.head {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 10px solid black;
+
+    position: absolute;
+    top: 50px;
+    right: -30px; /* starts on right edge of circle hence the offset */
+}
+
+.torso {
+    width: 10px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+.rightArm {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    right: -100px;
+    transform: rotate(-35deg);
+    transform-origin: bottom left;
+}
+
+.leftArm {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    transform: rotate(35deg);
+    transform-origin: top right;
+}
+
+.drawing_rope-pole {
+    height: 50px;
+    width: 10px;
+    background-color: black;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.drawing_upper-pole {
+    height: 10px;
+    width: 200px;
+    background-color: black;
+    margin-left: 120px;
+}
+
+.drawing_center-pole {
+    height: 400px;
+    width: 10px;
+    background-color: black;
+    margin-left: 120px;
+}
+
+.drawing_bottom-pole {
+    height: 10px;
+    width: 250px;
+    background-color: black;
+}

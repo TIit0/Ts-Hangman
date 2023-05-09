@@ -7,16 +7,17 @@ const LeftArm = <div className="leftArm" />
 const RightLeg = <div className="rightLeg" />
 const LeftLeg = <div className="leftLeg" />
 
-export default function HangmanDrawing() {
+type HangmanDrawingProps = {
+    guesses: number;
+}
 
+const BODY_PARTS: JSX.Element[] = [Head,Torso,RightArm,LeftArm,RightLeg,LeftLeg,]
+
+export default function HangmanDrawing({guesses}: HangmanDrawingProps) {
+console.log(guesses)
     return (
         <div className="drawing_wrapper">
-            {Head}
-            {Torso}
-            {RightArm}
-            {LeftArm}
-            {RightLeg}
-            {LeftLeg}
+            {BODY_PARTS.slice(0, guesses)}
             <div className="drawing_rope-pole" />
             <div className="drawing_upper-pole" />
             <div className="drawing_center-pole" />

@@ -1,12 +1,17 @@
 import "./HangmanWord.css"
 
+type HangManWordProps = {
+    guessedLetters: string[];
+    wordToGuess: string;
+}
 
-export default function HangmanWord() {
-    const word = "Test".toLowerCase()
-    const guessedLetters: string[] = ["t"];
+
+export default function HangmanWord({guessedLetters, wordToGuess}: HangManWordProps) {
+    
+    //const guessedLetters: string[] = ["t"];
     return (
         <div className="word_wrapper">
-            {word.split("").map((letter, index) => (
+            {wordToGuess.split("").map((letter, index) => (
                 <span
                     className="letter_container"
                     key={`${letter}${index}`}>

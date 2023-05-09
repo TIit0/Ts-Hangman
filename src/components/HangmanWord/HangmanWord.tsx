@@ -3,10 +3,11 @@ import "./HangmanWord.css"
 type HangManWordProps = {
     guessedLetters: string[];
     wordToGuess: string;
+    reveal?: boolean;
 }
 
 
-export default function HangmanWord({guessedLetters, wordToGuess}: HangManWordProps) {
+export default function HangmanWord({guessedLetters, wordToGuess, reveal = false}: HangManWordProps) {
     
     //const guessedLetters: string[] = ["t"];
     return (
@@ -18,7 +19,9 @@ export default function HangmanWord({guessedLetters, wordToGuess}: HangManWordPr
 
                     <span className="letter"
                         style={
-                            { visibility: guessedLetters.includes(letter) ? "visible" : "hidden" }}>
+                            { visibility: guessedLetters.includes(letter) || reveal ? "visible" : "hidden",
+                            
+                            color: !guessedLetters.includes(letter) && reveal ? "red" : "black" }}>
                         {letter}
                     </span>
                 </span>

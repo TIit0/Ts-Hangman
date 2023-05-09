@@ -19,6 +19,11 @@
 }
 
 .keyboard_button:active {
+    background-color: hsl(17, 100%, 50%);
+    color: white;
+}
+
+.keyboard_button.active {
     background-color: hsl(200, 100%, 50%);
     color: white;
 }
